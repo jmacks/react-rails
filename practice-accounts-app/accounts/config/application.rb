@@ -22,5 +22,7 @@ module Accounts
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # Use react state helpers to help with more complex json data manipulation
+    config.react.addons = true
   end
 end
