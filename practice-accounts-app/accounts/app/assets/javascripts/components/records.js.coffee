@@ -11,7 +11,7 @@
     @setState records: records
 
   deleteRecord: (record) ->
-    index = records.indexOf record
+    index = @state.records.indexOf record
     records = React.addons.update(@state.records, { $splice: [[index, 1]] })
     @replaceState records: records
 
